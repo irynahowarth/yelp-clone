@@ -1,0 +1,15 @@
+<h1>All of our Restaurants</h1>
+
+<table>
+  <tr>
+  <th>Name</th>
+  <th>Rating</th>
+  </tr>
+
+  <% @restaurants.each do |restaurant| %>
+  <tr>
+    <td><%= restaurant.name %></td>
+    <td><%= restaurant.rating %></td>
+  </tr>
+  <% end %>
+</table>
